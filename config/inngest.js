@@ -1,4 +1,6 @@
 import { Inngest } from "inngest";
+import connectDB from "@/utils/connectDB"; // Ensure this path is correct
+import User from "@/models/User"; // Ensure this path is correct
 
 // Create a client to send and receive events
 export const inngest = new Inngest({ id: "quickcart-next" });
